@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>I-TECH | Projects</title>
+
+
+    <!-- MAIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+
+    <!-- NAVBAR CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+
+    <!-- PROJECTS CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/projects.css"
+    >
+
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+    
+    
+            <!-- LOGO -->
+    
+            <a
+                href="../index.html"
+                class="brand"
+            >
+    
+                <img
+                    src="../images/logo.png"
+                    alt="I-TECH Logo"
+                    class="logo"
+                >
+    
+            </a>
+    
+    
+            <!-- MOBILE MENU -->
+    
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open navigation"
+            >
+    
+                <span></span>
+                <span></span>
+                <span></span>
+    
+            </button>
+    
+    
+            <!-- NAVIGATION -->
+    
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+    
+                <li>
+    
+                    <a href="../index.html">
+                        Home
+                    </a>
+    
+                </li>
+    
+    
+                <li>
+    
+                    <a
+                        href="about.html"
+                        
+                    >
+                        About Us
+                    </a>
+    
+                </li>
+    
+    
+                <li class="dropdown">
+    
+                    <a href="services.html">
+    
+                        Services
+    
+                        <span class="arrow">
+                            ⌄
+                        </span>
+    
+                    </a>
+    
+    
+                    <ul class="dropdown-menu">
+    
+    
+                        <li>
+                            <a href="services.html#WebDevelopment">
+                                Web Development
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="services.html#networking">
+                                Networking
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="services.html#cctv">
+                                CCTV Solutions
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="services.html#cabling">
+                                Structured Cabling
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="services.html#it-support">
+                                IT Support
+                            </a>
+                        </li>
+    
+                    </ul>
+    
+                </li>
+    
+    
+                <li>
+    
+                    <a href="products.html">
+                        Products
+                    </a>
+    
+                </li>
+    
+                <li>
+    
+                    <a
+                        href="projects.html"
+                        class="active"
+                    >
+                    projects
+                    </a>
+    
+                </li>
+    
+                <li>
+    
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+    
+                </li>
+    
+            </ul>
+    
+    
+            <!-- NAV BUTTON -->
+    
+            <a
+                href="contact.html"
+                class="nav-button"
+            >
+    
+                Get in Touch
+    
+                <span>
+                    →
+                </span>
+    
+            </a>
+    
+        </nav>
+    
+    </header>
+
+    <!-- =====================================================
+         PROJECT HERO
+    ====================================================== -->
+
+    <section class="projects-hero">
+
+
+        <div class="projects-hero-content">
+
+
+            <span class="projects-label">
+                I-TECH PROJECTS
+            </span>
+
+
+            <h1>
+
+                Technology
+                <span>In Action.</span>
+
+            </h1>
+
+
+            <p>
+
+                Explore some of the technology solutions,
+                installations and digital projects delivered
+                by I-TECH.
+
+            </p>
+
+
+            <div class="projects-breadcrumb">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <span>/</span>
+
+                <span>
+                    Projects
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECT INTRO
+    ====================================================== -->
+
+    <section class="projects-intro">
+
+
+        <div class="projects-intro-container">
+
+
+            <div>
+
+                <span class="section-label">
+                    OUR WORK
+                </span>
+
+
+                <h2>
+
+                    Built With
+                    <span>Purpose.</span>
+
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Every I-TECH project is designed around
+                reliability, performance, security and
+                the specific needs of our clients.
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECT FILTER
+    ====================================================== -->
+
+    <section class="projects-section">
+
+
+        <div class="project-filter">
+
+
+            <button
+                class="filter-btn active"
+                data-filter="all"
+            >
+                All Projects
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="web"
+            >
+                Web Development
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="networking"
+            >
+                Networking
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="cctv"
+            >
+                CCTV
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="cabling"
+            >
+                Structured Cabling
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="support"
+            >
+                IT Support
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROJECT GRID
+        ================================================== -->
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 01 -->
+
+            <article
+                class="project-card"
+                data-category="web"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="../images/projects/web-development.jpg"
+                        alt="Web development project"
+                    >
+
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+
+                    <span class="project-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        DIGITAL SOLUTIONS
+                    </span>
+
+
+                    <h3>
+                        Business Website Development
+                    </h3>
+
+
+                    <p>
+
+                        Professional and responsive websites
+                        designed to establish a strong digital
+                        presence for businesses.
+
+                    </p>
+
+
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 02 -->
+
+            <article
+                class="project-card"
+                data-category="networking"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="../images/projects/networking.jpg"
+                        alt="Networking project"
+                    >
+
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+
+                    <span class="project-category">
+                        NETWORKING
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        NETWORK INFRASTRUCTURE
+                    </span>
+
+
+                    <h3>
+                        Business Network Installation
+                    </h3>
+
+
+                    <p>
+
+                        Reliable wired and wireless network
+                        infrastructure designed for efficient
+                        business connectivity.
+
+                    </p>
+
+
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 03 -->
+
+            <article
+                class="project-card"
+                data-category="cctv"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="../images/projects/cctv.jpg"
+                        alt="CCTV installation project"
+                    >
+
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+
+                    <span class="project-category">
+                        CCTV
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        SECURITY SOLUTIONS
+                    </span>
+
+
+                    <h3>
+                        CCTV Surveillance Installation
+                    </h3>
+
+
+                    <p>
+
+                        Professional CCTV installation and
+                        surveillance systems for improved
+                        security and monitoring.
+
+                    </p>
+
+
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 04 -->
+
+            <article
+                class="project-card"
+                data-category="cabling"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="../images/projects/structured-cabling.jpg"
+                        alt="Structured cabling project"
+                    >
+
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+
+                    <span class="project-category">
+                        STRUCTURED CABLING
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        IT INFRASTRUCTURE
+                    </span>
+
+
+                    <h3>
+                        Structured Cabling Installation
+                    </h3>
+
+
+                    <p>
+
+                        Organized voice and data cabling
+                        infrastructure built for reliable
+                        connectivity and future expansion.
+
+                    </p>
+
+
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 05 -->
+
+            <article
+                class="project-card"
+                data-category="networking"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="../images/projects/computer-lab.jpg"
+                        alt="Computer laboratory project"
+                    >
+
+
+                    <span class="project-number">
+                        05
+                    </span>
+
+
+                    <span class="project-category">
+                        COMPUTER LAB
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        EDUCATION TECHNOLOGY
+                    </span>
+
+
+                    <h3>
+                        Computer Lab Setup
+                    </h3>
+
+
+                    <p>
+
+                        Complete computer laboratory setup
+                        including computers, networking,
+                        configuration and technical support.
+
+                    </p>
+
+
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 06 -->
+
+            <article
+                class="project-card"
+                data-category="support"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="../images/projects/it-support.jpg"
+                        alt="IT support project"
+                    >
+
+
+                    <span class="project-number">
+                        06
+                    </span>
+
+
+                    <span class="project-category">
+                        IT SUPPORT
+                    </span>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        TECHNICAL SUPPORT
+                    </span>
+
+
+                    <h3>
+                        IT Support & Maintenance
+                    </h3>
+
+
+                    <p>
+
+                        Ongoing technical support, hardware
+                        maintenance, software installation
+                        and troubleshooting.
+
+                    </p>
+
+
+                    <a
+                        href="contact.html"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECT APPROACH
+    ====================================================== -->
+
+    <section class="project-approach">
+
+
+        <div class="approach-heading">
+
+            <span class="section-label">
+                OUR APPROACH
+            </span>
+
+
+            <h2>
+
+                From Idea
+                <span>To Reality.</span>
+
+            </h2>
+
+
+            <p>
+
+                We combine technical expertise with
+                practical solutions to deliver technology
+                projects that work.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="approach-grid">
+
+
+            <div class="approach-card">
+
+                <span>
+                    01
+                </span>
+
+
+                <h3>
+                    Understand
+                </h3>
+
+
+                <p>
+
+                    We understand your requirements,
+                    environment and objectives.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="approach-card">
+
+                <span>
+                    02
+                </span>
+
+
+                <h3>
+                    Plan
+                </h3>
+
+
+                <p>
+
+                    We develop a practical technology
+                    solution around your needs.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="approach-card">
+
+                <span>
+                    03
+                </span>
+
+
+                <h3>
+                    Implement
+                </h3>
+
+
+                <p>
+
+                    Our team installs, configures and
+                    deploys the required solution.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="approach-card">
+
+                <span>
+                    04
+                </span>
+
+
+                <h3>
+                    Support
+                </h3>
+
+
+                <p>
+
+                    We provide technical support and
+                    maintenance after implementation.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="projects-cta">
+
+
+        <div class="projects-cta-content">
+
+
+            <span>
+                HAVE A PROJECT IN MIND?
+            </span>
+
+
+            <h2>
+
+                Let's Build
+                <strong>Something Great.</strong>
+
+            </h2>
+
+
+            <p>
+
+                Tell us about your project and let's
+                discuss how I-TECH can help.
+
+            </p>
+
+
+            <a
+                href="contact.html"
+                class="projects-cta-button"
+            >
+                Start A Project
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECT FILTER JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
+
+        const projectCards =
+            document.querySelectorAll(".project-card");
+
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+
+                filterButtons.forEach(btn => {
+
+                    btn.classList.remove("active");
+
+                });
+
+
+                button.classList.add("active");
+
+
+                const filter =
+                    button.dataset.filter;
+
+
+                projectCards.forEach(card => {
+
+
+                    if (
+                        filter === "all" ||
+                        card.dataset.category === filter
+                    ) {
+
+                        card.style.display = "block";
+
+                    } else {
+
+                        card.style.display = "none";
+
+                    }
+
+                });
+
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

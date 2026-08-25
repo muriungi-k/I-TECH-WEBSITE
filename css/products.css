@@ -1,0 +1,1446 @@
+/* =====================================================
+   I-TECH PRODUCTS PAGE
+===================================================== */
+
+
+/* =====================================================
+   PRODUCTS HERO
+===================================================== */
+
+.products-hero {
+
+    min-height: 900px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1,7,24,.97),
+            rgba(1,15,40,.78),
+            rgba(1,15,40,.40)
+        ),
+        url("../images/itech-hero-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.products-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 160px;
+
+    background:
+        linear-gradient(
+            transparent,
+            #020817
+        );
+}
+
+
+.products-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 160px 50px 90px;
+}
+
+
+.products-label {
+
+    color: #008cff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.products-hero h1 {
+
+    max-width: 900px;
+
+    margin: 20px 0 30px;
+
+    font-size:
+        clamp(60px, 8vw, 105px);
+
+    line-height: .92;
+
+    letter-spacing: -4px;
+
+    font-weight: 900;
+}
+
+
+.products-hero h1 span {
+
+    display: block;
+
+    color: #087dff;
+}
+
+
+.products-hero-content > p {
+
+    max-width: 650px;
+
+    color: #d5dfef;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+.products-breadcrumb {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    font-size: 14px;
+}
+
+
+.products-breadcrumb a {
+
+    color: #008cff;
+
+}
+
+
+.products-breadcrumb span {
+
+    color: #66748b;
+}
+
+
+
+/* =====================================================
+   PRODUCTS INTRO
+===================================================== */
+
+.products-intro {
+
+    padding: 110px 50px;
+
+    background: #020817;
+}
+
+
+.products-intro-container {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.products-intro h2 {
+
+    margin-top: 20px;
+
+    font-size:
+        clamp(42px, 5vw, 65px);
+
+    line-height: .98;
+
+    letter-spacing: -2px;
+}
+
+
+.products-intro h2 span {
+
+    display: block;
+
+    color: #008cff;
+}
+
+
+.products-intro-container > p {
+
+    max-width: 600px;
+
+    color: #aebbd0;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+.section-label {
+
+    color: #008cff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+
+/* =====================================================
+   PRODUCT SECTION
+===================================================== */
+
+.product-section {
+
+    padding: 120px 50px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #020817,
+            #03142d
+        );
+}
+
+
+.product-grid {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.product-card {
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    border:
+        1px solid rgba(0,140,255,.22);
+
+    background:
+        rgba(3,18,48,.55);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+
+        0 20px 55px rgba(0,0,0,.25),
+
+        inset 0 1px 0
+        rgba(255,255,255,.06);
+
+    transition:
+        .4s ease;
+}
+
+
+.product-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(0,140,255,.75);
+
+    box-shadow:
+        0 30px 70px
+        rgba(0,90,255,.15);
+}
+
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.product-image {
+
+    height: 280px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        #06152e;
+}
+
+
+.product-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 40%,
+            rgba(2,8,23,.8)
+        );
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform .6s ease;
+}
+
+
+.product-card:hover
+.product-image img {
+
+    transform:
+        scale(1.06);
+}
+
+
+.product-image > span {
+
+    position: absolute;
+
+    z-index: 2;
+
+    top: 20px;
+
+    right: 25px;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    color:
+        rgba(255,255,255,.18);
+}
+
+
+
+/* =====================================================
+   PRODUCT CONTENT
+===================================================== */
+
+.product-content {
+
+    padding: 35px;
+}
+
+
+.product-category {
+
+    color: #008cff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.product-content h3 {
+
+    margin:
+        12px 0 15px;
+
+    font-size: 28px;
+
+    line-height: 1.1;
+}
+
+
+.product-content > p {
+
+    color: #aebbd0;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =====================================================
+   PRODUCT BRANDS
+===================================================== */
+
+.product-brands {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+
+.product-brands span {
+
+    padding:
+        8px 12px;
+
+    border:
+        1px solid rgba(0,140,255,.22);
+
+    border-radius: 30px;
+
+    background:
+        rgba(0,140,255,.06);
+
+    color: #91a5c0;
+
+    font-size: 10px;
+}
+
+
+
+/* =====================================================
+   PRODUCT LINK
+===================================================== */
+
+.product-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #008cff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition:
+        .3s ease;
+}
+
+
+.product-link span {
+
+    font-size: 20px;
+
+    transition:
+        .3s ease;
+}
+
+
+.product-link:hover {
+
+    color: white;
+}
+
+
+.product-link:hover span {
+
+    transform:
+        translateX(6px);
+}
+
+
+
+/* =====================================================
+   PRODUCT PROCESS
+===================================================== */
+
+.product-process {
+
+    padding: 120px 50px;
+
+    background: #020817;
+}
+
+
+.process-header {
+
+    max-width: 700px;
+
+    margin:
+        0 auto 65px;
+
+    text-align: center;
+}
+
+
+.process-header h2 {
+
+    margin-top: 18px;
+
+    font-size:
+        clamp(42px, 5vw, 65px);
+
+    line-height: 1;
+}
+
+
+.process-header h2 span {
+
+    color: #008cff;
+}
+
+
+.process-grid {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.process-card {
+
+    min-height: 220px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid rgba(0,140,255,.18);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(4,25,63,.7),
+            rgba(2,10,27,.7)
+        );
+
+    transition:
+        .3s ease;
+}
+
+
+.process-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(0,140,255,.65);
+}
+
+
+.process-card > span {
+
+    color: #008cff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.process-card h3 {
+
+    margin:
+        18px 0 12px;
+
+    font-size: 18px;
+}
+
+
+.process-card p {
+
+    color: #8495ad;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =====================================================
+   PRODUCTS CTA
+===================================================== */
+
+.products-cta {
+
+    padding: 110px 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #075cf4,
+            #06318c
+        );
+}
+
+
+.products-cta-content {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+.products-cta-content > span {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 800;
+}
+
+
+.products-cta h2 {
+
+    margin:
+        20px auto;
+
+    font-size:
+        clamp(40px, 5vw, 70px);
+
+    line-height: 1;
+}
+
+
+.products-cta h2 strong {
+
+    color: #a9dcff;
+}
+
+
+.products-cta p {
+
+    color: #d9ebff;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+.products-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        15px 30px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #0754ed;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    transition:
+        .3s ease;
+}
+
+
+.products-cta-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.25);
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .products-intro-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .product-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .products-hero-content {
+
+        padding:
+            130px 25px 70px;
+
+    }
+
+
+    .products-hero h1 {
+
+        font-size:
+            clamp(48px, 13vw, 75px);
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .products-hero-content > p {
+
+        font-size: 16px;
+
+    }
+
+
+    .products-intro,
+    .product-section,
+    .product-process {
+
+        padding:
+            80px 25px;
+
+    }
+
+
+    .product-image {
+
+        height: 240px;
+
+    }
+
+
+    .product-content {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .products-cta {
+
+        padding:
+            80px 20px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .products-hero-content {
+
+        padding:
+            120px 20px 60px;
+
+    }
+
+
+    .products-hero h1 {
+
+        font-size:
+            45px;
+
+    }
+
+
+    .product-image {
+
+        height: 210px;
+
+    }
+
+
+    .product-content h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .product-content {
+
+        padding:
+            25px 20px;
+
+    }
+
+}
+/* =====================================================
+   I-TECH PRODUCTS
+   GLOBAL GLASSMORPHISM BACKGROUND
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL PAGE BACKGROUND
+===================================================== */
+
+html {
+
+    background: #020817;
+}
+
+
+body {
+
+    background:
+        linear-gradient(
+            rgba(1,7,24,.28),
+            rgba(1,12,30,.32)
+        ),
+        url("../images/itech-hero-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-color: #020817;
+
+    color: white;
+}
+
+
+/* =====================================================
+   TRANSPARENT PAGE SECTIONS
+===================================================== */
+
+.products-intro,
+.product-section,
+.product-process {
+
+    background: transparent !important;
+}
+
+
+/* =====================================================
+   PRODUCTS HERO
+===================================================== */
+
+.products-hero {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1,7,24,.48),
+            rgba(1,15,40,.28),
+            rgba(1,15,40,.12)
+        ),
+        url("../images/itech-hero-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =====================================================
+   HERO BOTTOM TRANSITION
+===================================================== */
+
+.products-hero::after {
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(2,8,23,.45)
+        );
+
+}
+
+
+/* =====================================================
+   PRODUCTS INTRO GLASS
+===================================================== */
+
+.products-intro-container {
+
+    position: relative;
+}
+
+
+/* Optional glass panel around the intro text */
+
+.products-intro-container > p {
+
+    padding: 25px;
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    backdrop-filter:
+        blur(6px);
+
+    -webkit-backdrop-filter:
+        blur(6px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.15),
+
+        inset 0 1px 0
+        rgba(255,255,255,.07);
+}
+
+
+/* =====================================================
+   PRODUCT CARDS
+===================================================== */
+
+.product-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.065),
+            rgba(0,100,255,.055)
+        ) !important;
+
+    border:
+        1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:
+        blur(8px);
+
+    -webkit-backdrop-filter:
+        blur(8px);
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(0,0,0,.20),
+
+        inset 0 1px 0
+        rgba(255,255,255,.08);
+
+    position: relative;
+}
+
+
+/* =====================================================
+   PRODUCT CARD GLASS SHINE
+===================================================== */
+
+.product-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.25),
+            transparent
+        );
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   PRODUCT CARD HOVER
+===================================================== */
+
+.product-card:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,140,255,.10),
+            rgba(255,255,255,.075)
+        ) !important;
+
+    border-color:
+        rgba(0,140,255,.65);
+
+    box-shadow:
+
+        0 30px 70px
+        rgba(0,80,255,.18),
+
+        inset 0 1px 0
+        rgba(255,255,255,.12);
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE GLASS EDGE
+===================================================== */
+
+.product-image {
+
+    background:
+        rgba(3,20,50,.45);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+
+/* =====================================================
+   PRODUCT BRANDS GLASS TAGS
+===================================================== */
+
+.product-brands span {
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid rgba(0,140,255,.28);
+
+    backdrop-filter:
+        blur(5px);
+
+    -webkit-backdrop-filter:
+        blur(5px);
+
+    transition:
+        .3s ease;
+}
+
+
+.product-brands span:hover {
+
+    background:
+        rgba(0,140,255,.12);
+
+    border-color:
+        rgba(0,140,255,.55);
+
+    color: white;
+}
+
+
+/* =====================================================
+   PRODUCT PROCESS
+===================================================== */
+
+.product-process {
+
+    position: relative;
+
+    background: transparent !important;
+}
+
+
+/* =====================================================
+   PROCESS CARDS
+===================================================== */
+
+.process-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.06),
+            rgba(0,100,255,.05)
+        ) !important;
+
+    border:
+        1px solid rgba(255,255,255,.13);
+
+    backdrop-filter:
+        blur(7px);
+
+    -webkit-backdrop-filter:
+        blur(7px);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.18),
+
+        inset 0 1px 0
+        rgba(255,255,255,.07);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   PROCESS CARD GLASS SHINE
+===================================================== */
+
+.process-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.22),
+            transparent
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   PROCESS CARD HOVER
+===================================================== */
+
+.process-card:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,140,255,.11),
+            rgba(255,255,255,.07)
+        ) !important;
+
+    border-color:
+        rgba(0,140,255,.60);
+
+    box-shadow:
+
+        0 25px 55px
+        rgba(0,80,255,.16),
+
+        inset 0 1px 0
+        rgba(255,255,255,.10);
+}
+
+
+/* =====================================================
+   PRODUCTS CTA BACKGROUND
+===================================================== */
+
+.products-cta {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(2,20,55,.48),
+            rgba(2,30,75,.42)
+        ),
+        url("../images/itech-hero-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =====================================================
+   PRODUCTS CTA GLASS
+===================================================== */
+
+.products-cta-content {
+
+    padding:
+        60px 40px;
+
+    border-radius:
+        28px;
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.09),
+            rgba(0,100,255,.08)
+        );
+
+    backdrop-filter:
+        blur(8px);
+
+    -webkit-backdrop-filter:
+        blur(8px);
+
+    box-shadow:
+
+        0 25px 60px
+        rgba(0,0,0,.22),
+
+        inset 0 1px 0
+        rgba(255,255,255,.12);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CTA GLASS SHINE
+===================================================== */
+
+.products-cta-content::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.28),
+            transparent
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   CTA BUTTON
+===================================================== */
+
+.products-cta-button {
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.15);
+}
+
+
+.products-cta-button:hover {
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.30);
+}
+
+
+/* =====================================================
+   SUBTLE SECTION LIGHT
+===================================================== */
+
+.products-intro::before,
+.product-section::before,
+.product-process::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(0,140,255,.035),
+            transparent 55%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   KEEP CONTENT ABOVE SECTION LIGHT
+===================================================== */
+
+.products-intro,
+.product-section,
+.product-process {
+
+    position: relative;
+}
+
+
+.products-intro > *,
+.product-section > *,
+.product-process > * {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   MOBILE GLASS ADJUSTMENT
+===================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+
+        background-attachment: scroll;
+
+    }
+
+
+    .product-card,
+    .process-card,
+    .products-cta-content,
+    .products-intro-container > p {
+
+        backdrop-filter:
+            blur(6px);
+
+        -webkit-backdrop-filter:
+            blur(6px);
+
+    }
+
+}

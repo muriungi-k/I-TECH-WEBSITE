@@ -1,0 +1,1659 @@
+/* =====================================================
+   ABOUT HERO
+===================================================== */
+
+.about-hero {
+
+    min-height: 720px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        
+        url("../images/itech-hero-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+.about-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 150px;
+
+    background:
+        linear-gradient(
+            transparent,
+            #020817
+        );
+}
+
+
+.about-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 160px 50px 80px;
+}
+
+
+.about-hero-label {
+
+    color: #008cff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.about-hero h1 {
+
+    font-size:
+        clamp(65px, 8vw, 110px);
+
+    line-height: .9;
+
+    font-weight: 900;
+
+    margin: 20px 0 30px;
+
+    letter-spacing: -4px;
+}
+
+
+.about-hero h1 span {
+
+    display: block;
+
+    color: #087dff;
+}
+
+
+.about-hero-content > p {
+
+    max-width: 650px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #d5dfef;
+}
+
+
+.about-breadcrumb {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    font-size: 14px;
+}
+
+
+.about-breadcrumb a {
+
+    color: #008cff;
+}
+
+
+.about-breadcrumb span {
+
+    color: #66748b;
+}
+
+
+
+/* =====================================================
+   COMPANY INTRO
+===================================================== */
+
+.company-intro {
+
+    padding: 120px 50px;
+
+    background: #020817;
+}
+
+
+.company-intro-container {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.intro-content h2 {
+
+    font-size:
+        clamp(40px, 4vw, 62px);
+
+    line-height: 1.02;
+
+    margin-bottom: 30px;
+}
+
+
+.intro-content h2 span {
+
+    display: block;
+
+    color: #008cff;
+}
+
+
+.intro-content > p {
+
+    max-width: 650px;
+
+    color: #b9c6da;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+.intro-highlights {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.intro-highlights > div {
+
+    padding: 20px;
+
+    border:
+        1px solid rgba(0,140,255,.3);
+
+    border-radius: 14px;
+
+    background:
+        rgba(0,100,255,.05);
+}
+
+
+.intro-highlights strong {
+
+    display: block;
+
+    color: #008cff;
+
+    font-size: 17px;
+}
+
+
+.intro-highlights span {
+
+    color: #8998ad;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    display: block;
+}
+
+
+
+/* =====================================================
+   INTRO VISUAL
+===================================================== */
+
+.intro-visual {
+
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 30px;
+
+    border:
+        1px solid rgba(0,140,255,.35);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,100,255,.15),
+            rgba(2,8,23,.95) 65%
+        );
+
+    overflow: hidden;
+}
+
+
+.intro-circle {
+
+    width: 330px;
+
+    height: 330px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        2px solid rgba(0,140,255,.7);
+
+    box-shadow:
+        0 0 80px rgba(0,120,255,.25),
+        inset 0 0 60px rgba(0,120,255,.15);
+
+    animation:
+        introPulse 4s ease-in-out infinite;
+}
+
+
+.intro-circle-inner {
+
+    width: 220px;
+
+    height: 220px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    background:
+        radial-gradient(
+            circle,
+            #0b3e89,
+            #020817
+        );
+
+    border:
+        1px solid #008cff;
+}
+
+
+.intro-circle-inner span {
+
+    font-size: 85px;
+
+    font-weight: 900;
+
+    line-height: .8;
+
+    color: #008cff;
+}
+
+
+.intro-circle-inner strong {
+
+    font-size: 22px;
+
+    letter-spacing: 5px;
+}
+
+
+.floating-tech {
+
+    position: absolute;
+
+    padding: 10px 16px;
+
+    border:
+        1px solid rgba(0,140,255,.6);
+
+    border-radius: 30px;
+
+    background:
+        rgba(2,12,35,.8);
+
+    backdrop-filter: blur(10px);
+
+    color: #dce9ff;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.3);
+}
+
+
+.tech-one {
+
+    top: 15%;
+
+    left: 10%;
+}
+
+
+.tech-two {
+
+    top: 25%;
+
+    right: 8%;
+}
+
+
+.tech-three {
+
+    bottom: 20%;
+
+    left: 8%;
+}
+
+
+.tech-four {
+
+    bottom: 12%;
+
+    right: 12%;
+}
+
+
+@keyframes introPulse {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.04);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MISSION & VISION
+===================================================== */
+
+.mission-vision {
+
+    padding: 110px 50px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #020817,
+            #03142d
+        );
+}
+
+
+.mission-vision-container {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 30px;
+}
+
+
+.mv-card {
+
+    min-height: 430px;
+
+    padding: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    border:
+        1px solid rgba(0,140,255,.35);
+
+    background:
+        rgba(3,18,48,.65);
+
+    backdrop-filter: blur(15px);
+
+    transition: .4s;
+}
+
+
+.mv-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(0,140,255,.8);
+
+    box-shadow:
+        0 25px 60px rgba(0,80,255,.15);
+}
+
+
+.mv-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    font-size: 70px;
+
+    font-weight: 900;
+
+    color:
+        rgba(0,140,255,.08);
+}
+
+
+.mv-label {
+
+    color: #008cff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.mv-card h2 {
+
+    font-size: 40px;
+
+    line-height: 1.05;
+
+    margin: 25px 0;
+}
+
+
+.mv-card h2 span {
+
+    display: block;
+
+    color: #008cff;
+}
+
+
+.mv-card p {
+
+    max-width: 530px;
+
+    color: #aebbd0;
+
+    line-height: 1.8;
+}
+
+
+.mv-line {
+
+    width: 70px;
+
+    height: 3px;
+
+    margin-top: 40px;
+
+    background: #008cff;
+}
+
+
+.mv-keyword {
+
+    display: block;
+
+    margin-top: 20px;
+
+    color: #6e829f;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+
+/* =====================================================
+   VALUES
+===================================================== */
+
+.values-section {
+
+    padding: 120px 50px;
+
+    background: #020817;
+}
+
+
+.values-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.values-header h2 {
+
+    font-size:
+        clamp(42px, 5vw, 65px);
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+
+.values-header h2 span {
+
+    color: #008cff;
+}
+
+
+.values-header p {
+
+    color: #9eacc1;
+
+    line-height: 1.7;
+}
+
+
+.values-grid {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.value-card {
+
+    min-height: 260px;
+
+    position: relative;
+
+    padding: 35px;
+
+    border:
+        1px solid rgba(0,140,255,.2);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(4,25,63,.8),
+            rgba(2,10,27,.8)
+        );
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+
+.value-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        #008cff;
+}
+
+
+.value-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(0,140,255,.12);
+
+    border:
+        1px solid rgba(0,140,255,.5);
+
+    color: #008cff;
+
+    font-size: 25px;
+}
+
+
+.value-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+    color: rgba(255,255,255,.15);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.value-card h3 {
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+
+.value-card p {
+
+    color: #8f9fb6;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =====================================================
+   WHY I-TECH
+===================================================== */
+
+.why-itech {
+
+    padding: 120px 50px;
+
+    background:
+        #03132d;
+}
+
+
+.why-container {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr .8fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.why-content h2 {
+
+    font-size:
+        clamp(40px, 4vw, 60px);
+
+    line-height: 1;
+
+    margin: 20px 0 25px;
+}
+
+
+.why-content h2 span {
+
+    display: block;
+
+    color: #008cff;
+}
+
+
+.why-content > p {
+
+    max-width: 650px;
+
+    color: #aebbd0;
+
+    line-height: 1.8;
+}
+
+
+.why-list {
+
+    margin-top: 35px;
+
+    display: grid;
+
+    gap: 20px;
+}
+
+
+.why-item {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.why-item > span {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid #008cff;
+
+    color: #008cff;
+
+    font-size: 12px;
+
+    flex-shrink: 0;
+}
+
+
+.why-item h3 {
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+
+.why-item p {
+
+    color: #8495ad;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.why-visual {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.why-card {
+
+    width: 330px;
+
+    height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    border:
+        1px solid rgba(0,140,255,.5);
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,115,255,.25),
+            rgba(2,8,25,.95) 65%
+        );
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.4);
+}
+
+
+.why-card > span {
+
+    color: #008cff;
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+
+.why-card strong {
+
+    font-size: 30px;
+
+    line-height: 1.1;
+
+    letter-spacing: 2px;
+}
+
+
+.why-card-line {
+
+    width: 60px;
+
+    height: 2px;
+
+    background: #008cff;
+
+    margin: 30px 0;
+}
+
+
+.why-card small {
+
+    color: #72849d;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+
+/* =====================================================
+   PROFESSIONAL APPROACH
+===================================================== */
+
+.approach-section {
+
+    padding: 120px 50px;
+
+    background: #020817;
+}
+
+
+.approach-header {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.approach-header h2 {
+
+    font-size:
+        clamp(42px, 5vw, 65px);
+
+    line-height: 1;
+
+    margin-top: 15px;
+}
+
+
+.approach-header h2 span {
+
+    color: #008cff;
+}
+
+
+.approach-grid {
+
+    max-width: 1300px;
+
+    margin: 70px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.approach-step {
+
+    flex: 1;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.approach-step > span {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        2px solid #008cff;
+
+    color: #008cff;
+
+    font-weight: 800;
+}
+
+
+.approach-step h3 {
+
+    margin: 20px 0 10px;
+
+    font-size: 17px;
+}
+
+
+.approach-step p {
+
+    color: #8495ad;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.approach-connector {
+
+    color: #008cff;
+
+    font-size: 28px;
+}
+
+
+
+/* =====================================================
+   HISTORY
+===================================================== */
+
+.history-section {
+
+    padding: 120px 50px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #03132d,
+            #020817
+        );
+}
+
+
+.history-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.history-heading {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+
+.history-heading h2 {
+
+    font-size:
+        clamp(42px, 5vw, 65px);
+
+    line-height: 1;
+}
+
+
+.history-heading h2 span {
+
+    color: #008cff;
+}
+
+
+.timeline {
+
+    position: relative;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 25px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            #008cff,
+            rgba(0,140,255,.1)
+        );
+}
+
+
+.timeline-item {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+
+.timeline-dot {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #03132d;
+
+    border:
+        2px solid #008cff;
+
+    color: #008cff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    z-index: 2;
+}
+
+
+.timeline-content {
+
+    padding: 5px 0 0;
+}
+
+
+.timeline-content > span {
+
+    color: #008cff;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+
+.timeline-content h3 {
+
+    font-size: 24px;
+
+    margin: 8px 0;
+}
+
+
+.timeline-content p {
+
+    max-width: 650px;
+
+    color: #8495ad;
+
+    line-height: 1.7;
+}
+
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.about-cta {
+
+    padding: 110px 30px;
+
+    text-align: center;
+
+
+}
+
+
+.about-cta-content > span {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+}
+
+
+.about-cta h2 {
+
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    font-size:
+        clamp(40px, 5vw, 70px);
+
+    line-height: 1;
+}
+
+
+.about-cta h2 strong {
+
+    color: #a9dcff;
+}
+
+
+.about-cta p {
+
+    color: #d9ebff;
+
+    margin-bottom: 30px;
+}
+
+
+.about-cta .primary-button {
+
+    background: white;
+
+    color: #0754ed;
+
+    display: inline-flex;
+}
+/* =====================================================
+   ABOUT PAGE - GLOBAL GLASSMORPHISM BACKGROUND
+   NO BLUR / NO OPAQUE SECTIONS
+===================================================== */
+
+body {
+
+    background:
+        linear-gradient(
+            rgba(1,7,24,.72),
+            rgba(1,15,40,.72)
+        ),
+        url("../images/itech-hero-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+/* =====================================================
+   MAKE MAIN SECTIONS TRANSPARENT
+===================================================== */
+
+.company-intro,
+.mission-vision,
+.values-section,
+.why-itech,
+.approach-section,
+.history-section {
+
+    position: relative;
+
+    background: transparent;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   SUBTLE GLASS SECTION LAYER
+   NO BLUR
+===================================================== */
+
+.company-intro::before,
+.mission-vision::before,
+.values-section::before,
+.why-itech::before,
+.approach-section::before,
+.history-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border-top:
+        1px solid rgba(255,255,255,.06);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.04);
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   KEEP SECTION CONTENT ABOVE GLASS LAYER
+===================================================== */
+
+.company-intro > *,
+.mission-vision > *,
+.values-section > *,
+.why-itech > *,
+.approach-section > *,
+.history-section > * {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   INTRO HIGHLIGHTS - GLASS
+===================================================== */
+
+.intro-highlights > div {
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(0,140,255,.28);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.25);
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.intro-highlights > div:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(0,140,255,.65);
+
+    box-shadow:
+        0 15px 40px rgba(0,100,255,.18);
+}
+
+
+/* =====================================================
+   INTRO VISUAL - GLASS
+===================================================== */
+
+.intro-visual {
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid rgba(0,140,255,.35);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.30),
+        inset 0 0 50px rgba(0,120,255,.05);
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+}
+
+
+/* =====================================================
+   FLOATING TECHNOLOGY LABELS
+===================================================== */
+
+.floating-tech {
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid rgba(0,140,255,.40);
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.30),
+        0 0 20px rgba(0,120,255,.08);
+}
+
+
+/* =====================================================
+   MISSION & VISION GLASS CARDS
+===================================================== */
+
+.mv-card {
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(0,140,255,.30);
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+
+.mv-card:hover {
+
+    border-color:
+        rgba(0,140,255,.75);
+
+    box-shadow:
+        0 25px 60px rgba(0,80,255,.20),
+        0 0 30px rgba(0,140,255,.08);
+}
+
+
+/* =====================================================
+   VALUES GLASS CARDS
+===================================================== */
+
+.value-card {
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(0,140,255,.22);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.25);
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+}
+
+
+.value-card:hover {
+
+    border-color:
+        rgba(0,140,255,.75);
+
+    box-shadow:
+        0 20px 50px rgba(0,100,255,.20),
+        0 0 25px rgba(0,140,255,.10);
+}
+
+
+/* =====================================================
+   WHY I-TECH GLASS PANEL
+===================================================== */
+
+.why-card {
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid rgba(0,140,255,.45);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35),
+        inset 0 0 50px rgba(0,100,255,.06);
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+}
+
+
+/* =====================================================
+   PROFESSIONAL APPROACH
+===================================================== */
+
+.approach-step {
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(0,140,255,.16);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.20);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.approach-step:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(0,140,255,.55);
+
+    box-shadow:
+        0 20px 45px rgba(0,100,255,.15);
+}
+
+
+/* =====================================================
+   HISTORY TIMELINE GLASS CONTENT
+===================================================== */
+
+.timeline-content {
+
+    padding:
+        25px 30px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid rgba(0,140,255,.18);
+
+    border-radius:
+        18px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.20);
+}
+
+
+.timeline-content:hover {
+
+    border-color:
+        rgba(0,140,255,.45);
+
+    box-shadow:
+        0 15px 40px rgba(0,100,255,.14);
+}
+
+
+/* =====================================================
+   CTA GLASS FINISH
+===================================================== */
+
+.about-cta {
+
+    position: relative;
+
+    background:
+     
+
+    border-top:
+        1px solid rgba(255,255,255,.15);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+        0 -20px 60px rgba(0,0,0,.20);
+}
+
+
+/* =====================================================
+   REMOVE ALL BLUR FROM ABOUT PAGE
+===================================================== */
+
+.about-hero,
+.company-intro,
+.intro-visual,
+.mission-vision,
+.mv-card,
+.values-section,
+.value-card,
+.why-itech,
+.why-card,
+.approach-section,
+.approach-step,
+.history-section,
+.timeline-content,
+.about-cta {
+
+    -webkit-backdrop-filter: none;
+
+    backdrop-filter: none;
+}

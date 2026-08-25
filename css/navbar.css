@@ -1,0 +1,391 @@
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 22px;
+
+    right: 22px;
+
+    z-index: 100;
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    max-width: 1500px;
+
+    min-height: 84px;
+
+    margin: auto;
+
+    padding: 0 25px 0 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border:
+        1px solid rgba(0, 137, 255, .45);
+
+    border-radius: 20px;
+
+    background:
+        rgba(2, 10, 31, .72);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.2);
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+
+.brand-icon {
+
+    width: 55px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 3px solid #008cff;
+
+    clip-path:
+        polygon(
+            50% 0,
+            95% 25%,
+            95% 75%,
+            50% 100%,
+            5% 75%,
+            5% 25%
+        );
+
+    color: white;
+
+    font-size: 39px;
+
+    font-family: Georgia, serif;
+
+    font-weight: bold;
+}
+
+
+.brand-text {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.brand-text strong {
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    line-height: 1;
+}
+
+
+.brand-text small {
+
+    font-size: 11px;
+
+    margin-top: 5px;
+
+    letter-spacing: .3px;
+}
+
+
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin-left: auto;
+}
+
+
+.nav-links li {
+
+    position: relative;
+}
+
+
+.nav-links a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 30px 0;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #f3f5fb;
+
+    transition: .3s;
+}
+
+
+.nav-links a:hover {
+
+    color: #008cff;
+}
+
+
+.nav-links a.active {
+
+    color: #008cff;
+
+    position: relative;
+}
+
+
+.nav-links a.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 13px;
+
+    left: 0;
+
+    width: 55px;
+
+    height: 4px;
+
+    background: #008cff;
+}
+
+
+.arrow {
+
+    font-size: 17px;
+
+    margin-left: 4px;
+}
+
+
+
+/* =====================================================
+   DROPDOWN
+===================================================== */
+
+.dropdown-menu {
+
+    position: absolute;
+
+    top: 76px;
+
+    left: -20px;
+
+    min-width: 220px;
+
+    padding: 10px;
+
+    background:
+        rgba(2, 10, 31, .96);
+
+    border:
+        1px solid rgba(0, 137, 255, .4);
+
+    border-radius: 12px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(10px);
+
+    transition: .3s;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.4);
+}
+
+
+.dropdown:hover .dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+}
+
+
+.dropdown-menu li {
+
+    width: 100%;
+}
+
+
+.dropdown-menu a {
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+
+.dropdown-menu a:hover {
+
+    background: rgba(0, 130, 255, .12);
+}
+
+
+
+/* =====================================================
+   NAV BUTTON
+===================================================== */
+
+.nav-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 15px 28px;
+
+    min-width: 185px;
+
+    border-radius: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #087dff,
+            #0754ed
+        );
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 30px rgba(0,90,255,.3);
+
+    transition: .3s;
+
+    flex-shrink: 0;
+}
+
+
+.nav-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 40px rgba(0,90,255,.5);
+}
+
+
+
+/* =====================================================
+   MOBILE BUTTON
+===================================================== */
+
+.mobile-menu-btn {
+
+    display: none;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: 1px solid #008cff;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.mobile-menu-btn span {
+
+    display: block;
+
+    width: 22px;
+
+    height: 2px;
+
+    background: white;
+}
