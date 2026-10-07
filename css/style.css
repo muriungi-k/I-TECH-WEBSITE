@@ -1,3 +1,21 @@
+/* Shared background lighting, based on the homepage. */
+:root {
+    --page-lighting: linear-gradient(
+        90deg,
+        rgba(1, 7, 24, .96) 0%,
+        rgba(1, 7, 24, .88) 22%,
+        rgba(1, 7, 24, .48) 48%,
+        rgba(1, 7, 24, .05) 78%
+    );
+    --hero-bottom-lighting: linear-gradient(transparent, rgba(1, 7, 24, .9));
+}
+
+@media (max-width: 850px) {
+    :root {
+        --page-lighting: linear-gradient(90deg, rgba(1, 7, 24, .96), rgba(1, 7, 24, .68));
+    }
+}
+
 /* =====================================================
    GLOBAL
 ===================================================== */
@@ -52,7 +70,7 @@ ul {
     align-items: center;
 
     background-image:
-        url("../images/itech-hero-bg.png");
+        url("../images/photos/nairobi-home.jpg");
 
     background-size: cover;
 
@@ -73,14 +91,7 @@ ul {
 
     inset: 0;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(1, 7, 24, 0.96) 0%,
-            rgba(1, 7, 24, 0.88) 22%,
-            rgba(1, 7, 24, 0.48) 48%,
-            rgba(1, 7, 24, 0.05) 78%
-        );
+    background: var(--page-lighting);
 
     z-index: 1;
 }
@@ -101,11 +112,7 @@ ul {
 
     height: 180px;
 
-    background:
-        linear-gradient(
-            transparent,
-            rgba(1, 7, 24, 0.9)
-        );
+    background: var(--hero-bottom-lighting);
 
     z-index: 1;
 }

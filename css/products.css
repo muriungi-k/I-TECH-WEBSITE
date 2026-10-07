@@ -25,8 +25,7 @@
             rgba(1,7,24,.97),
             rgba(1,15,40,.78),
             rgba(1,15,40,.40)
-        ),
-        url("../images/itech-hero-bg.png");
+        );
 
     background-size: cover;
 
@@ -904,11 +903,8 @@ html {
 body {
 
     background:
-        linear-gradient(
-            rgba(1,7,24,.28),
-            rgba(1,12,30,.32)
-        ),
-        url("../images/itech-hero-bg.png");
+        var(--page-lighting),
+        url("../images/photos/nairobi-products.jpg");
 
     background-size: cover;
 
@@ -948,8 +944,7 @@ body {
             rgba(1,7,24,.48),
             rgba(1,15,40,.28),
             rgba(1,15,40,.12)
-        ),
-        url("../images/itech-hero-bg.png");
+        );
 
     background-size: cover;
 
@@ -1269,8 +1264,7 @@ body {
         linear-gradient(
             rgba(2,20,55,.48),
             rgba(2,30,75,.42)
-        ),
-        url("../images/itech-hero-bg.png");
+        );
 
     background-size: cover;
 
@@ -1444,3 +1438,15 @@ body {
     }
 
 }
+/* The page background supplies the shared homepage lighting. */
+.products-hero { background: transparent; }
+
+/* Match the homepage bottom fade without adding another image tint. */
+.products-hero::after {
+    height: 180px;
+    background: var(--hero-bottom-lighting);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.products-hero-overlay { background: none; }

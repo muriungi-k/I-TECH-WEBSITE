@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <meta charset="UTF-8">
 
@@ -39,15 +41,17 @@
 
     <!-- GOOGLE FONT -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
+
+
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/ui-polish.css">
 
 </head>
 
 
-<body>
+<body class="page-projects">
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 
     <!-- =====================================================
@@ -56,167 +60,133 @@
 
     <header class="site-header">
 
-        <nav class="navbar">
-    
-    
-            <!-- LOGO -->
-    
-            <a
-                href="../index.html"
-                class="brand"
+    <nav class="navbar" aria-label="Main navigation">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="brand">
+
+            <img
+                src="../images/logo.png"
+                alt="I-TECH - Infinite Technology Solutions"
+                class="logo"
             >
-    
-                <img
-                    src="../images/logo.png"
-                    alt="I-TECH Logo"
-                    class="logo"
-                >
-    
-            </a>
-    
-    
-            <!-- MOBILE MENU -->
-    
-            <button
-                class="mobile-menu-btn"
-                id="mobileMenuBtn"
-                aria-label="Open navigation"
-            >
-    
-                <span></span>
-                <span></span>
-                <span></span>
-    
-            </button>
-    
-    
-            <!-- NAVIGATION -->
-    
-            <ul
-                class="nav-links"
-                id="navLinks"
-            >
-    
-                <li>
-    
-                    <a href="../index.html">
-                        Home
-                    </a>
-    
-                </li>
-    
-    
-                <li>
-    
-                    <a
-                        href="about.html"
-                        
-                    >
-                        About Us
-                    </a>
-    
-                </li>
-    
-    
-                <li class="dropdown">
-    
-                    <a href="services.html">
-    
-                        Services
-    
-                        <span class="arrow">
-                            ⌄
-                        </span>
-    
-                    </a>
-    
-    
-                    <ul class="dropdown-menu">
-    
-    
-                        <li>
-                            <a href="services.html#WebDevelopment">
-                                Web Development
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="services.html#networking">
-                                Networking
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="services.html#cctv">
-                                CCTV Solutions
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="services.html#cabling">
-                                Structured Cabling
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="services.html#it-support">
-                                IT Support
-                            </a>
-                        </li>
-    
-                    </ul>
-    
-                </li>
-    
-    
-                <li>
-    
-                    <a href="products.html">
-                        Products
-                    </a>
-    
-                </li>
-    
-                <li>
-    
-                    <a
-                        href="projects.html"
-                        class="active"
-                    >
-                    projects
-                    </a>
-    
-                </li>
-    
-                <li>
-    
-                    <a href="contact.html">
-                        Contact Us
-                    </a>
-    
-                </li>
-    
-            </ul>
-    
-    
-            <!-- NAV BUTTON -->
-    
-            <a
-                href="contact.html"
-                class="nav-button"
-            >
-    
-                Get in Touch
-    
-                <span>
-                    →
-                </span>
-    
-            </a>
-    
-        </nav>
-    
-    </header>
+
+            <div class="brand-text">
+
+                <strong>I-TECH</strong>
+
+                <small>
+                    INFINITE TECHNOLOGY SOLUTIONS
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+            type="button"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <!-- NAVIGATION LINKS -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="../index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li class="dropdown">
+
+                <a href="services.html">
+                    Services
+
+                </a>
+
+                <button class="dropdown-toggle" type="button" aria-label="Show service links" aria-expanded="false" aria-controls="serviceLinks"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                <ul class="dropdown-menu" id="serviceLinks">
+                    <li>
+                        <a href="services.html#WebDevelopment">Web Development</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html#networking">Networking</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html#cctv">CCTV Solutions</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html#cabling">Structured Cabling</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html#it-support">IT Support</a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="products.html">
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html" class="active" aria-current="page">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- NAV CTA -->
+
+        <a href="contact.html" class="nav-button">
+
+            Get in Touch
+
+            <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+
+        </a>
+
+    </nav>
+
+</header>
+
+<main id="main-content" tabindex="-1">
 
     <!-- =====================================================
          PROJECT HERO
@@ -321,11 +291,12 @@
     <section class="projects-section">
 
 
-        <div class="project-filter">
+        <p class="project-photo-note">Illustrative technology photographs</p>
+        <div class="project-filter" role="group" aria-label="Filter projects">
 
 
             <button
-                class="filter-btn active"
+                class="filter-btn active" aria-pressed="true" type="button"
                 data-filter="all"
             >
                 All Projects
@@ -333,7 +304,7 @@
 
 
             <button
-                class="filter-btn"
+                class="filter-btn" aria-pressed="false" type="button"
                 data-filter="web"
             >
                 Web Development
@@ -341,7 +312,7 @@
 
 
             <button
-                class="filter-btn"
+                class="filter-btn" aria-pressed="false" type="button"
                 data-filter="networking"
             >
                 Networking
@@ -349,7 +320,7 @@
 
 
             <button
-                class="filter-btn"
+                class="filter-btn" aria-pressed="false" type="button"
                 data-filter="cctv"
             >
                 CCTV
@@ -357,7 +328,7 @@
 
 
             <button
-                class="filter-btn"
+                class="filter-btn" aria-pressed="false" type="button"
                 data-filter="cabling"
             >
                 Structured Cabling
@@ -365,7 +336,7 @@
 
 
             <button
-                class="filter-btn"
+                class="filter-btn" aria-pressed="false" type="button"
                 data-filter="support"
             >
                 IT Support
@@ -380,6 +351,7 @@
              PROJECT GRID
         ================================================== -->
 
+        <p class="filter-status sr-only" role="status" aria-live="polite"></p>
         <div class="projects-grid">
 
 
@@ -392,10 +364,7 @@
 
                 <div class="project-image">
 
-                    <img
-                        src="../images/projects/web-development.jpg"
-                        alt="Web development project"
-                    >
+                    <img src="../images/photos/web-development.jpg" alt="Laptop showing website development code" width="1600" height="900" loading="lazy" decoding="async">
 
 
                     <span class="project-number">
@@ -459,10 +428,7 @@
 
                 <div class="project-image">
 
-                    <img
-                        src="../images/projects/networking.jpg"
-                        alt="Networking project"
-                    >
+                    <img src="../images/photos/data-center.jpg" alt="Server racks in a data center" width="1600" height="900" loading="lazy" decoding="async">
 
 
                     <span class="project-number">
@@ -526,10 +492,7 @@
 
                 <div class="project-image">
 
-                    <img
-                        src="../images/projects/cctv.jpg"
-                        alt="CCTV installation project"
-                    >
+                    <img src="../images/photos/cctv-building.jpg" alt="Dome surveillance camera installed on a building" width="1600" height="900" loading="lazy" decoding="async">
 
 
                     <span class="project-number">
@@ -593,10 +556,7 @@
 
                 <div class="project-image">
 
-                    <img
-                        src="../images/projects/structured-cabling.jpg"
-                        alt="Structured cabling project"
-                    >
+                    <img src="../images/photos/patch-panel.jpg" alt="Structured ethernet cabling in a patch panel" width="1600" height="900" loading="lazy" decoding="async">
 
 
                     <span class="project-number">
@@ -660,10 +620,7 @@
 
                 <div class="project-image">
 
-                    <img
-                        src="../images/projects/computer-lab.jpg"
-                        alt="Computer laboratory project"
-                    >
+                    <img src="../images/photos/computer-lab.jpg" alt="Computer lab with rows of desktop workstations" width="1600" height="900" loading="lazy" decoding="async">
 
 
                     <span class="project-number">
@@ -727,10 +684,7 @@
 
                 <div class="project-image">
 
-                    <img
-                        src="../images/projects/it-support.jpg"
-                        alt="IT support project"
-                    >
+                    <img src="../images/photos/it-support.jpg" alt="Computer hardware repair in progress" width="1600" height="900" loading="lazy" decoding="async">
 
 
                     <span class="project-number">
@@ -967,6 +921,35 @@
 
 
     </section>
+</main>
+<footer class="footer">
+
+    <div>
+
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2"/></svg> Kitale, Trans Nzoia County, Kenya
+
+    </div>
+
+
+    <div>
+
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5l2.9.7a2 2 0 0 1 1.7 2z"/></svg> <a href="tel:+254704004131">0704004131</a>
+
+    </div>
+
+
+    <div>
+
+        <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg> <a href="mailto:infinitetechnologysolutions6@gmail.com">infinitetechnologysolutions6@gmail.com</a>
+
+    </div>
+
+
+    <div class="socials" aria-label="Footer links"><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div>
+
+<a href="privacy.html">Privacy</a>
+<button class="cookie-settings" type="button" hidden>Cookie settings</button>
+</footer>
 
 
 
@@ -974,59 +957,8 @@
          PROJECT FILTER JAVASCRIPT
     ====================================================== -->
 
-    <script>
 
-        const filterButtons =
-            document.querySelectorAll(".filter-btn");
-
-        const projectCards =
-            document.querySelectorAll(".project-card");
-
-
-        filterButtons.forEach(button => {
-
-            button.addEventListener("click", () => {
-
-
-                filterButtons.forEach(btn => {
-
-                    btn.classList.remove("active");
-
-                });
-
-
-                button.classList.add("active");
-
-
-                const filter =
-                    button.dataset.filter;
-
-
-                projectCards.forEach(card => {
-
-
-                    if (
-                        filter === "all" ||
-                        card.dataset.category === filter
-                    ) {
-
-                        card.style.display = "block";
-
-                    } else {
-
-                        card.style.display = "none";
-
-                    }
-
-                });
-
-
-            });
-
-        });
-
-    </script>
-
+<script src="../js/main.js" defer></script>
 
 </body>
 

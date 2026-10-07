@@ -25,8 +25,7 @@
             rgba(1,7,24,.96),
             rgba(1,15,40,.75),
             rgba(1,15,40,.40)
-        ),
-        url("../images/services.png");
+        );
 
     background-size: cover;
 
@@ -870,8 +869,7 @@
             135deg,
             rgba(7,92,244,.88),
             rgba(6,49,140,.88)
-        ),
-        url("../images/service.png");
+        );
 
     background-size: cover;
 
@@ -1229,11 +1227,8 @@ html {
 body {
 
     background:
-        linear-gradient(
-            rgba(1, 7, 24, .28),
-            rgba(1, 12, 30, .32)
-        ),
-        url("../images/service.png");
+        var(--page-lighting),
+        url("../images/photos/nairobi-services.jpg");
 
     background-size: cover;
 
@@ -1274,8 +1269,7 @@ body {
             rgba(1,7,24,.48),
             rgba(1,15,40,.28),
             rgba(1,15,40,.12)
-        ),
-        url("../images/services.png");
+        );
 
     background-size: cover;
 
@@ -1483,8 +1477,7 @@ body {
         linear-gradient(
             rgba(2,20,55,.48),
             rgba(2,30,75,.42)
-        ),
-        url("../images/servicescta.png");
+        );
 
     background-size: cover;
 
@@ -1670,3 +1663,17 @@ body {
     }
 
 }
+/* The page background supplies the shared homepage lighting. */
+.services-hero { background: transparent; }
+
+/* Match the homepage bottom fade without adding another image tint. */
+.services-hero::after {
+    height: 180px;
+    background: var(--hero-bottom-lighting);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.services-hero::before { background: none; }
+
+.services-hero-overlay { background: none; }

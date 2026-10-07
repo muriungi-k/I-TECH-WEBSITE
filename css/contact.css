@@ -20,8 +20,8 @@
     overflow: hidden;
 
     background:
-        
-        url("../images/contacts.png");
+        var(--page-lighting),
+        url("../images/photos/nairobi-contact.jpg");
 
     background-size: cover;
 
@@ -806,7 +806,8 @@
 
     background:
        
-        url("../images/kitale.png");
+        var(--page-lighting),
+        url("../images/photos/kitale.jpg");
 
     background-size: cover;
 
@@ -932,7 +933,8 @@
 
     background:
 
-    url("../images/contact.png"); 
+    var(--page-lighting),
+        url("../images/photos/nairobi-home.jpg");
 }
 
 
@@ -1200,4 +1202,11 @@
 
     }
 
+}
+/* Match the homepage bottom fade without adding another image tint. */
+.contact-hero::after {
+    height: 180px;
+    background: var(--hero-bottom-lighting);
+    z-index: 1;
+    pointer-events: none;
 }

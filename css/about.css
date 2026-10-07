@@ -12,9 +12,7 @@
 
     align-items: center;
 
-    background:
-        
-        url("../images/itech-hero-bg.png");
+    background: transparent;
 
     background-size: cover;
 
@@ -1287,11 +1285,8 @@
 body {
 
     background:
-        linear-gradient(
-            rgba(1,7,24,.72),
-            rgba(1,15,40,.72)
-        ),
-        url("../images/itech-hero-bg.png");
+        var(--page-lighting),
+        url("../images/photos/nairobi-about.jpg");
 
     background-size: cover;
 
@@ -1657,3 +1652,15 @@ body {
 
     backdrop-filter: none;
 }
+/* The page background supplies the shared homepage lighting. */
+.about-hero { background: transparent; }
+
+/* Match the homepage bottom fade without adding another image tint. */
+.about-hero::after {
+    height: 180px;
+    background: var(--hero-bottom-lighting);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.about-hero-overlay { background: none; }

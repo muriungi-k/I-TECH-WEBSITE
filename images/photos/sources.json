@@ -1,0 +1,149 @@
+[
+  {
+    "file": "laptops.jpg",
+    "photographer": "Gul Isik",
+    "source": "https://www.pexels.com/photo/laptops-and-tablet-on-table-20123611/",
+    "download": "https://images.pexels.com/photos/20123611/pexels-photo-20123611.jpeg?auto=compress&cs=tinysrgb&w=1400&q=85",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "computer-lab.jpg",
+    "photographer": "Ludovic Delot",
+    "source": "https://www.pexels.com/photo/a-classroom-with-rows-of-computers-and-monitors-18471480/",
+    "download": "https://images.pexels.com/photos/18471480/pexels-photo-18471480.jpeg?auto=compress&cs=tinysrgb&w=1400&q=85",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "nairobi-home.jpg",
+    "photographer": "Ken Mwaura",
+    "source": "https://www.pexels.com/photo/stunning-nairobi-skyline-at-dusk-29069329/",
+    "download": "https://images.pexels.com/photos/29069329/pexels-photo-29069329.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "nairobi-about.jpg",
+    "photographer": "Ken Mwaura",
+    "source": "https://www.pexels.com/photo/skyline-view-of-nairobi-cityscape-at-daytime-29069344/",
+    "download": "https://images.pexels.com/photos/29069344/pexels-photo-29069344.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "nairobi-services.jpg",
+    "photographer": "K",
+    "source": "https://www.pexels.com/photo/aerial-view-of-city-buildings-3794803/",
+    "download": "https://images.pexels.com/photos/3794803/pexels-photo-3794803.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "nairobi-products.jpg",
+    "photographer": "Youngafrikanna",
+    "source": "https://www.pexels.com/photo/nairobi-cityscape-aerial-view-of-skyscrapers-29891537/",
+    "download": "https://images.pexels.com/photos/29891537/pexels-photo-29891537.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "nairobi-projects.jpg",
+    "photographer": "J .rigah",
+    "source": "https://www.pexels.com/photo/modern-architectural-skyline-in-nairobi-31904144/",
+    "download": "https://images.pexels.com/photos/31904144/pexels-photo-31904144.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "nairobi-contact.jpg",
+    "photographer": "Youngafrikanna",
+    "source": "https://www.pexels.com/photo/nairobi-skyline-at-sunset-with-urban-landmarks-38133494/",
+    "download": "https://images.pexels.com/photos/38133494/pexels-photo-38133494.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "web-development.jpg",
+    "photographer": "Danny Meneses",
+    "source": "https://www.pexels.com/photo/photo-of-turned-on-laptop-computer-943096/",
+    "download": "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "network-engineer.jpg",
+    "photographer": "Field Engineer",
+    "source": "https://www.pexels.com/photo/electronics-engineer-fixing-cables-on-server-442150/",
+    "download": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "networking.jpg",
+    "photographer": "Josh Sorenson",
+    "source": "https://www.pexels.com/photo/ethernet-cables-plugged-on-a-server-rack-1054397/",
+    "download": "https://images.pexels.com/photos/1054397/pexels-photo-1054397.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "cabling.jpg",
+    "photographer": "Sergei Starostin",
+    "source": "https://www.pexels.com/photo/close-up-photo-of-ethernet-cables-on-network-switch-6466143/",
+    "download": "https://images.pexels.com/photos/6466143/pexels-photo-6466143.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "patch-panel.jpg",
+    "photographer": "Brett Sayles",
+    "source": "https://www.pexels.com/photo/cables-plugged-into-patch-panel-5073493/",
+    "download": "https://images.pexels.com/photos/5073493/pexels-photo-5073493.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "cctv.jpg",
+    "photographer": "H&CO",
+    "source": "https://www.pexels.com/photo/a-security-camera-installed-on-the-outside-wall-2885868/",
+    "download": "https://images.pexels.com/photos/2885868/pexels-photo-2885868.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "cctv-building.jpg",
+    "photographer": "Giant Asparagus",
+    "source": "https://www.pexels.com/photo/close-up-of-security-camera-on-modern-building-37591155/",
+    "download": "https://images.pexels.com/photos/37591155/pexels-photo-37591155.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "accessories.jpg",
+    "photographer": "PNW Production",
+    "source": "https://www.pexels.com/photo/a-white-keyboard-near-a-white-mouse-8250832/",
+    "download": "https://images.pexels.com/photos/8250832/pexels-photo-8250832.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "it-support.jpg",
+    "photographer": "IT services EU",
+    "source": "https://www.pexels.com/photo/close-up-of-man-repairing-a-computer-7639374/",
+    "download": "https://images.pexels.com/photos/7639374/pexels-photo-7639374.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "it-equipment.jpg",
+    "photographer": "panumas nikhomkhai",
+    "source": "https://www.pexels.com/photo/computer-server-in-data-center-room-17489163/",
+    "download": "https://images.pexels.com/photos/17489163/pexels-photo-17489163.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "data-center.jpg",
+    "photographer": "Brett Sayles",
+    "source": "https://www.pexels.com/photo/server-racks-on-data-center-4508751/",
+    "download": "https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "computers.jpg",
+    "photographer": "Alan Quirvan",
+    "source": "https://www.pexels.com/photo/modern-desktop-setup-with-computer-accessories-28297692/",
+    "download": "https://images.pexels.com/photos/28297692/pexels-photo-28297692.jpeg",
+    "license": "https://www.pexels.com/license/"
+  },
+  {
+    "file": "kitale.jpg",
+    "photographer": "Willy mwangi",
+    "source": "https://commons.wikimedia.org/wiki/File:Kitale_Town_Photos.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Displayed with CSS cover cropping and a navy overlay; photograph content unchanged."
+  }
+]

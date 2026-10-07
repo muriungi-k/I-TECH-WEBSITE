@@ -234,12 +234,7 @@
 
     .hero-overlay {
 
-        background:
-            linear-gradient(
-                90deg,
-                rgba(1,7,24,.96),
-                rgba(1,7,24,.68)
-            );
+        background: var(--page-lighting);
 
     }
 
